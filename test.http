@@ -1,0 +1,27 @@
+@BACKEND_URL = http://localhost:3000
+
+###
+GET {{BACKEND_URL}}/api/products
+
+###
+GET {{BACKEND_URL}}/api/products/633b42539be3e776156270e8
+
+###
+POST {{BACKEND_URL}}/api/products
+Content-Type: application/json
+
+{
+  "title": "A Pen",
+  "price": 39
+}
+
+###
+PATCH {{BACKEND_URL}}/api/products/633b421d9be3e776156270da
+Content-Type: application/json
+
+{
+  "title": "A Book"
+}
+
+###
+DELETE {{BACKEND_URL}}/api/products/633b42f79be3e77615627113
